@@ -33,4 +33,10 @@ Class form1
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+    Private Sub textBox2_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles TextBox2.KeyDown
+        'when enter is clicked on the URL bar the login button will be pressed
+        If e.KeyCode = Keys.Enter Then
+            Button1_Click(sender, e)
+        End If
+    End Sub
 End Class
