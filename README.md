@@ -4,7 +4,9 @@ Licensed under GNU GENERAL PUBLIC LICENSE
 
 Tut:
 1: Edit specified values inside project to get a successful MySQL connection / login
+
 2: Upload and edit all specified files and values in /PHP/ (to edit your DB and view users)
+
 3: Create the correct type of DB:
 ```sql
 CREATE TABLE `auth` (
