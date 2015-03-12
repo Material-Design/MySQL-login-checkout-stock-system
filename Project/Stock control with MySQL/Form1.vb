@@ -19,12 +19,14 @@ Class form1
             Dim myData As MySqlDataReader
             myData = myCommand.ExecuteReader()
             If myData.HasRows = 0 Then
+                'if login details are not found on MySQL database then show error and clear textbox
                 MessageBox.Show("Your login details are not a valid.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 TextBox2.Text = ""
                 conn.Close()
             Else
                 MainForm.Show()
                 conn.Close()
+                'using hide because close would exit the whole program, bad programming on my part
                 Me.Hide()
             End If
         Catch ex As Exception

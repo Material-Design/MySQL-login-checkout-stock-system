@@ -10,17 +10,14 @@ mysql_select_db("DB", $con);
 $sql="INSERT INTO TABLE (user, pass)
 VALUES
 ('$_POST[user]','$_POST[pass]')";
- 
 if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "user/pass added to database";
- 
+echo "Username and password added to database";
 mysql_close($con)
 ?>
 <a href ="http://YOUR-URL/index.php"><h3>Add users</h3></a>
 <meta http-equiv="refresh" content="3; url=http://YOUR-URL/index.php>
-
 </body>
 </html>

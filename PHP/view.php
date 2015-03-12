@@ -27,8 +27,6 @@ function delete_id(id)
 </script>
 </head>
 <body>
-
-
 <div id="header">
 	<div id="content">
     </div>
@@ -67,7 +65,5 @@ function delete_id(id)
     </table>
     </div>
 </div>
-
-
 </body>
 </html>
